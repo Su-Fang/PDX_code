@@ -6,9 +6,9 @@ Detailed usage of Xenome is avaliable at
 The https://github.com/data61/gossamer/blob/master/docs/xenome.md
 
 
-xenome index -T 8 -P <index> -H <mouse_mm10.fa> -G <human_hg38.fa>
+xenome index -T 8 -P <index_prefix> -H <mouse_mm10.fa> -G <human_hg38.fa>
 
-xenome classify -T 8 -P <index> --pairs --host-name mouse --graft-name human -i <in_1.fastq> -i <in_2.fastq>
+xenome classify -T 8 -P <index_prefix> --pairs --host-name mouse --graft-name human -i <in_1.fastq> -i <in_2.fastq>
 
 The reads classified into human are mapped to human genome (hg38) using HISAT2.
 The reads classified into mouse are mapped to mouse genome (mm10) using HISAT2.
